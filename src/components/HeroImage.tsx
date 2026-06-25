@@ -5,7 +5,7 @@ export default function HeroImage() {
     <div className="absolute inset-0 z-10 overflow-hidden">
       {/* Portrait — full-screen, centered on face */}
       <motion.img
-        src="/mehmet.jpeg"
+        src={`${import.meta.env.BASE_URL}mehmet.jpeg`}
         alt="Mehmet"
         initial={{ opacity: 0, scale: 1.05 }}
         animate={{ opacity: 1, scale: 1 }}
